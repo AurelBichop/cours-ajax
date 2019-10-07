@@ -3,13 +3,14 @@
     <head>
         <meta charset="UTF-8">
         <title>
-            {% block title %}Welcome!{% endblock %}
+            {% block title %}Welcome!
+            {% endblock %}
         </title>
         <link rel="stylesheet" href="https://bootswatch.com/4/lumen/bootstrap.min.css">
-        {% block stylesheets %}{% endblock %}
-    </head>
-    <body>
-        {% block body %}{% endblock %}
-        {% block javascripts %}{% endblock %}
-    </body>
-</html>
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.10.1/css/all.css" integrity="sha384-wxqG4glGB3nlqX0bi23nmgwCSjWIW13BdLUEYC4VIMehfbcro/ATkyDsF/AbIOVe" crossorigin="anonymous"> {% block stylesheets %}{% endblock %}
+        </head>
+        <body>
+            {% block body %}{% endblock %}
+            {% block javascripts %}{% endblock %}
+        </body>
+    </html>
